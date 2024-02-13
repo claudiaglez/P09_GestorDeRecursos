@@ -19,7 +19,8 @@ return new class extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
-            $table->ResourceTypeEnum('Resource_Type');
+            $table->enum('Resource_Type', ['value1', 'value2', 'value3', 'value4']);
+
         });
     }
 
