@@ -13,7 +13,15 @@ return new class extends Migration
     {
         Schema::create('recursos', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->date('fecha');
+            $table->foreign('id_tipos')->references('id')->on('tipos');
+            $table->string('titulo', 255);
+            $table->foreign('id_stacks')->references('id')->on('stacks');
+            $table->string('responsable', 100);
+            $table->text('grabacion');
+            $table->text('presentacion');
+            $table->text('repo');
+            $table->foreign('id_recursos_extras')->references('id')->on('recursos_extras');
         });
     }
 
