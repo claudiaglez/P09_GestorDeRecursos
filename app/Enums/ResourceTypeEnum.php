@@ -9,3 +9,5 @@ enum ResourceTypeEnum: int
     case Live_Coding = 3;
     case Transversal = 4;
 }
+
+?>
