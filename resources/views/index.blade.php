@@ -10,10 +10,11 @@
 @extends('templates.indexTemplate')
 @extends('templates.footerTemplate')
 @section('navbar')
-<h1>Recursos</h1>
+
 @section('indexTemplate')
 @section('footer')
 @endsection
+
 
 
 
