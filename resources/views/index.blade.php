@@ -7,13 +7,15 @@
 </head>
 <body>
 @extends('templates.headerTemplate')
-@section('navbar')
-<h1>Hola soy Index</h1>
-
-
+@extends('templates.indexTemplate')
 @extends('templates.footerTemplate')
+@section('navbar')
+<h1>Recursos</h1>
+@section('indexTemplate')
 @section('footer')
 @endsection
+
+
 
 
 <script src="../path/to/flowbite/dist/flowbite.min.js"></script>   
