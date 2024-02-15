@@ -9,7 +9,12 @@
 @extends('templates.headerTemplate')
 @section('navbar')
 <h1>Hola soy Index</h1>
+
+
+@extends('templates.footerTemplate')
+@section('footer')
 @endsection
+
 
 <script src="../path/to/flowbite/dist/flowbite.min.js"></script>   
 </body>
