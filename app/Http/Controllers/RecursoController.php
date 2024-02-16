@@ -17,6 +17,6 @@ class RecursoController extends Controller
     public function index()
     {
         $resources = Recurso::all();
-        return view()
+        return view();
     }
 }
