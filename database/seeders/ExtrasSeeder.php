@@ -13,6 +13,6 @@ class ExtrasSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        \App\Models\Extra::factory(10)->create();
     }
 }

@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('titulo', 255);
             $table->text('enlace');
+            $table->timestamps();
         });
     }
 

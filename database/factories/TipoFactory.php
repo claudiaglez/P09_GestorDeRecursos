@@ -17,7 +17,7 @@ class TipoFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'tipo' => $this->faker->word(),
         ];
     }
 }

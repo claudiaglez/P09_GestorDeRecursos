@@ -8,6 +8,7 @@ use App\Models\Stack;
 use App\Models\Extra;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
+
 class RecursoFactory extends Factory
 {
     /**
@@ -37,7 +38,8 @@ class RecursoFactory extends Factory
             'grabacion' => $this->faker->text(100),
             'presentacion' => $this->faker->text(100),
             'repo' => $this->faker->url(),
-            'id_extras' => $extraId,
+            'id_extras' => $extraId
+        
             
         ];
     }

@@ -17,7 +17,7 @@ class StackFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'stack' => $this->faker->word(),
         ];
     }
 }

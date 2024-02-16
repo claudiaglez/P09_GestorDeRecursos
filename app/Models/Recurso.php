@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Recurso extends Model
 {
     use HasFactory;
+    //public $timestamps = true;
 }

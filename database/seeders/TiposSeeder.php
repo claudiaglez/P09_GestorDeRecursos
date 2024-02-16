@@ -13,6 +13,6 @@ class TiposSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        \App\Models\Tipo::factory(10)->create();
     }
 }
