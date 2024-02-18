@@ -11,10 +11,14 @@
 
 @section('content')
 
+<a href="{{ route('recurso.create')}}">Crear nuevo recurso</a>
+
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
     <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+   
         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
+           
                 <th scope="col" class="px-6 py-3">Título</th>
                 <th scope="col" class="px-6 py-3">Tipo</th>
                 <th scope="col" class="px-6 py-3">Stack</th>
@@ -27,38 +31,41 @@
             </tr>
         </thead>
         <tbody>
+        @forelse ($resources as $resource) 
             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Título del recurso
+                <a href='#'>{{ $resource->titulo }}
                 </th>
                 <td class="px-6 py-4">
-                    Tipo de recurso
+                <a href='#'>{{ $resource->id_tipos }}
                 </td>
                 <td class="px-6 py-4">
-                    Stack
+                <a href='#'>{{ $resource->id_stacks }}
                 </td>
                 <td class="px-6 py-4">
-                    Nombre de quien sube el recurso
+                <a href='#'>{{ $resource->responsable }}
                 </td>
                 <td class="px-6 py-4">
-                    Enlace
+                <a href='#'>{{ $resource->grabacion }}
                 </td>
                 <td class="px-6 py-4">
-                    Enlace
+                <a href='#'>{{ $resource->presentacion }}
                 </td>
                 <td class="px-6 py-4">
-                    Enlace
+                <a href='#'>{{ $resource->repo }}
                 </td>
                 <td class="px-6 py-4">
-                    Enlace
+                <a href='#'>{{ $resource->id_extras }}
                 </td>
                 <td class="px-6 py-4 text-right">
                     <a href="#" class="font-medium text-black dark:text-white hover:text-green-400 dark:hover:text-green-400">✏️ Editar</a>
                     <a href="#" class="font-medium text-black dark:text-white hover:text-red-600 dark:hover:text-red-500">❌ Eliminar</a>
                 </td>
             </tr>
+            @empty
+           <p>No hay recursos</p>
+        @endforelse
         </tbody>
     </table>
 </div>
-
 @endsection

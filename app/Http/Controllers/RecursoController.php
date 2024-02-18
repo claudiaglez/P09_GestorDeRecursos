@@ -17,6 +17,18 @@ class RecursoController extends Controller
     public function index()
     {
         $resources = Recurso::all();
-        return view();
+        return view('index', compact('resources'));
     }
+
+    public function create()
+    {
+        return view('recurso.create');
+    }
+
+    public function store(Request $request)
+    {  
+        Recurso::create($request->all());
+        return redirect()->route('index');
+    }
+
 }
