@@ -13,6 +13,24 @@ class TiposSeeder extends Seeder
      */
     public function run(): void
     {
-        \App\Models\Tipo::factory(10)->create();
+        Tipo::create([
+
+            'tipo' => 'masterclass',
+        ]);
+
+        Tipo::create([
+            
+            'tipo' => 'píldora',
+        ]);
+
+        Tipo::create([
+            
+            'tipo' => 'Live Coding',
+        ]);
+
+        Tipo::create([
+            
+            'tipo' => 'Transversal',
+        ]);
     }
 }
