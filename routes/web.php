@@ -18,10 +18,9 @@ Route::get('/', [RecursoController::class, 'index'])->name('index');
 
 Route::get('recurso/create', [RecursoController::class, 'create'])->name('recurso.create');
 
-Route::get('recurso/store', [RecursoController::class, 'store'])->name('recurso.store');
+Route::post('recurso/store', [RecursoController::class, 'store'])->name('recurso.store');
+
+Route::get('recurso/edit/{recurso}', [RecursoController::class, 'edit'])->name('recurso.edit');
 
 
-Route::get('/edit', function () {
-    return view('recurso.edit');
-});
 
