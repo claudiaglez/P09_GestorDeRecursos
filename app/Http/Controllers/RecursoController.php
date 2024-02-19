@@ -49,4 +49,10 @@ class RecursoController extends Controller
         return redirect()->route('index');
     }
 
+    public function destroy(Recurso $resource){
+        $resource->delete();
+        return redirect()->route('index');
+
+    }
+
 }

@@ -24,3 +24,5 @@ Route::get('recurso/edit/{resource}', [RecursoController::class, 'edit'])->name(
 
 Route::put('/recurso/update/{resource}', [RecursoController::class, 'update'])->name('recurso.update');
 
+Route::delete('/recurso/destroy/{resource}', [RecursoController::class, 'destroy'])->name('recurso.destroy');
+

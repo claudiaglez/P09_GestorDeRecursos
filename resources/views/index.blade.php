@@ -59,7 +59,11 @@
                 </td>
                 <td class="px-6 py-4 text-right">
                     <a href="{{ route('recurso.edit', $resource->id)}}" class="font-medium text-black dark:text-white hover:text-green-400 dark:hover:text-green-400">✏️ Editar</a>
-                    <a href="#" class="font-medium text-black dark:text-white hover:text-red-600 dark:hover:text-red-500">❌ Eliminar</a>
+                    <form action="{{ route('recurso.destroy', $resource->id)}}" method='POST'>
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="font-medium text-black dark:text-white hover:text-red-600 dark:hover:text-red-500">❌ Eliminar</button>
+                    </form>
                 </td>
             </tr>
             @empty
