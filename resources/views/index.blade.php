@@ -37,10 +37,10 @@
                 <a href='#'>{{ $resource->titulo }}
                 </th>
                 <td class="px-6 py-4">
-                <a href='#'>{{ $resource->id_tipos }}
+                <a href='#'>{{ $resource->tipo->tipo }}
                 </td>
                 <td class="px-6 py-4">
-                <a href='#'>{{ $resource->id_stacks }}
+                <a href='#'>{{ $resource->stack->stack }}
                 </td>
                 <td class="px-6 py-4">
                 <a href='#'>{{ $resource->responsable }}
