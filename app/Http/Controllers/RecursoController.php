@@ -22,7 +22,11 @@ class RecursoController extends Controller
 
     public function create()
     {
-        return view('recurso.create');
+        $tipos = Tipo::all();
+        $stacks = Stack::all();
+
+        return view('recurso.create', compact('tipos', 'stacks'));
+
     }
 
     public function store(Request $request)
@@ -30,5 +34,7 @@ class RecursoController extends Controller
         Recurso::create($request->all());
         return redirect()->route('index');
     }
+
+    
 
 }
