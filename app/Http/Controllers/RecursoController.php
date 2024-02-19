@@ -40,13 +40,13 @@ class RecursoController extends Controller
         $tipos = Tipo::all();
         $stacks = Stack::all();
         $resource = Recurso::find($resource);
-        return view('recurso.edit', compact('tipos', 'stacks'));
+        return view('recurso.edit', compact('resource','tipos', 'stacks'));
     }
 
     public function update(Request $request, Recurso $resource):RedirectResponse{
         //$resource = Recurso::find($resource);
         $resource->update($request->all()); 
-        return redirect()->route('recurso.index');
+        return redirect()->route('index');
     }
 
 }
