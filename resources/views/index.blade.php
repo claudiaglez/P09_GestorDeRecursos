@@ -58,7 +58,7 @@
                 <a href='#'>{{ $resource->id_extras }}
                 </td>
                 <td class="px-6 py-4 text-right">
-                    <a href="#" class="font-medium text-black dark:text-white hover:text-green-400 dark:hover:text-green-400">✏️ Editar</a>
+                    <a href="{{ route('recurso.edit', $resource->id)}}" class="font-medium text-black dark:text-white hover:text-green-400 dark:hover:text-green-400">✏️ Editar</a>
                     <a href="#" class="font-medium text-black dark:text-white hover:text-red-600 dark:hover:text-red-500">❌ Eliminar</a>
                 </td>
             </tr>

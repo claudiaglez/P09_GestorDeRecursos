@@ -10,7 +10,7 @@ use App\Models\Tipo;
 use App\Models\Stack;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
-
+use Illuminate\Support\Facades\Redirect;
 
 class RecursoController extends Controller
 {
@@ -33,8 +33,20 @@ class RecursoController extends Controller
     {  
         Recurso::create($request->all());
         return redirect()->route('index');
+        
     }
 
-    
+    public function edit($resource){
+        $tipos = Tipo::all();
+        $stacks = Stack::all();
+        $resource = Recurso::find($resource);
+        return view('recurso.edit', compact('tipos', 'stacks'));
+    }
+
+    public function update(Request $request, Recurso $resource):RedirectResponse{
+        //$resource = Recurso::find($resource);
+        $resource->update($request->all()); 
+        return redirect()->route('recurso.index');
+    }
 
 }

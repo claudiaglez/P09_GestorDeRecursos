@@ -20,7 +20,7 @@ Route::get('recurso/create', [RecursoController::class, 'create'])->name('recurs
 
 Route::post('recurso/store', [RecursoController::class, 'store'])->name('recurso.store');
 
-Route::get('recurso/edit/{recurso}', [RecursoController::class, 'edit'])->name('recurso.edit');
+Route::get('recurso/edit/{resource}', [RecursoController::class, 'edit'])->name('recurso.edit');
 
-
+Route::put('/recurso/update/{resource}', [RecursoController::class, 'update'])->name('recurso.update');
 
