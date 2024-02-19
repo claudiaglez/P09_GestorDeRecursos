@@ -15,12 +15,12 @@ class TiposSeeder extends Seeder
     {
         Tipo::create([
 
-            'tipo' => 'masterclass',
+            'tipo' => 'Masterclass',
         ]);
 
         Tipo::create([
             
-            'tipo' => 'píldora',
+            'tipo' => 'Píldora',
         ]);
 
         Tipo::create([
