@@ -11,7 +11,7 @@
 
 @section('content')
 
-<a href="{{ route('recurso.create')}}">Crear nuevo recurso</a>
+<!-- <a href="{{ route('recurso.create')}}">Crear nuevo recurso</a> -->
 
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
     <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
@@ -65,9 +65,10 @@
                     <button type="submit" class="font-medium text-black dark:text-white hover:text-red-600 dark:hover:text-red-500">❌ Eliminar</button>
                     </form>
                 </td>
-            </tr>
-            @empty
+                @empty
            <p>No hay recursos</p>
+            </tr>
+           
         @endforelse
         </tbody>
     </table>
