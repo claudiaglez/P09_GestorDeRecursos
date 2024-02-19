@@ -10,10 +10,12 @@ class Tipo extends Model
 {
     use HasFactory;
 
-    protected  $fillable = [
-        "tipo",
-    ];
+    protected $guarded = [];
+   
     public function recursos(): HasMany{
         return $this->hasMany(Recurso::class,'id_tipos');
     }
 }
+
+
+ 
