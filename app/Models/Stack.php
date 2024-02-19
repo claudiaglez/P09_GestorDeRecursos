@@ -10,9 +10,8 @@ class Stack extends Model
 {
     use HasFactory;
 
-    protected  $fillable = [
-        "stack",
-    ];
+    protected $guarded = [];
+    
     public function recursos(): HasMany{
         return $this->hasMany(Recurso::class,'id_stacks');
     }

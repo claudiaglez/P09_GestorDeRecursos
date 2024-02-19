@@ -17,10 +17,10 @@ return new class extends Migration
             $table->string('titulo', 255);
             $table->unsignedBigInteger('id_stacks');
             $table->string('responsable', 100);
-            $table->text('grabacion');
-            $table->text('presentacion');
-            $table->text('repo');
-            $table->unsignedBigInteger('id_extras');
+            $table->text('grabacion')->nullable();
+            $table->text('presentacion')->nullable();
+            $table->text('repo')->nullable();
+            $table->unsignedBigInteger('id_extras')->nullable();
             $table->timestamps();
 
             $table->foreign('id_tipos')->references('id')->on('tipos');

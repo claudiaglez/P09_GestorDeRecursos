@@ -13,6 +13,21 @@ class StacksSeeder extends Seeder
      */
     public function run(): void
     {
-        \App\Models\Stack::factory(10)->create();
+        Stack::create([
+
+            'stack' => 'Frontend',
+        ]);
+
+        Stack::create([
+            
+            'stack' => 'Backend',
+        ]);
+
+        Stack::create([
+            
+            'stack' => 'Full-Stack',
+        ]);
+
+    
     }
 }
