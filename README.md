@@ -1,5 +1,7 @@
+![imagen](public/assets/img/Image20240219183849.png)
+
+
 # *Implementación de un CRUD en Laravel*
-Este README detalla los pasos necesarios para implementar un CRUD (Create, Read, Update, Delete) en Laravel, 
 
 En resumen, esta aplicación web permite al usuario gestionar recursos a través de una interfaz intuitiva y proporciona operaciones básicas como crear, leer, actualizar y eliminar recursos en una base de datos.
 
@@ -37,4 +39,6 @@ Una vez completados los pasos de instalación y configuración, puedes iniciar e
 
 #   Créditos
 Este proyecto fue desarrollado por   Claudia,Anacecilia,MariaM,Sharon 
+
+
                                             
