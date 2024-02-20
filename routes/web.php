@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RecursoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [RecursoController::class, 'index'])->name('index');
+
+Route::get('recurso/create', [RecursoController::class, 'create'])->name('recurso.create');
+
+Route::post('recurso/store', [RecursoController::class, 'store'])->name('recurso.store');
+
+Route::get('recurso/edit/{resource}', [RecursoController::class, 'edit'])->name('recurso.edit');
+
+Route::put('/recurso/update/{resource}', [RecursoController::class, 'update'])->name('recurso.update');
+
+Route::delete('/recurso/destroy/{resource}', [RecursoController::class, 'destroy'])->name('recurso.destroy');
+
