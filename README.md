@@ -1,44 +1,93 @@
+# :open_book: Gestor de Recursos <br>
+
+Resource manager developed in PHP using the framework Laravel, that allows you to enter, modify and delete different resources.
+
+## :camera: Preview
 ![imagen](public/assets/img/Image20240219183849.png)
 
 
-# *Implementación de un CRUD en Laravel*
+## ⚙️ Technologies
 
-En resumen, esta aplicación web permite al usuario gestionar recursos a través de una interfaz intuitiva y proporciona operaciones básicas como crear, leer, actualizar y eliminar recursos en una base de datos.
-
-   # Requisitos previos
-Antes de comenzar, asegúrate de tener instalado lo siguiente en tu sistema:
-
-    . PHP (versión 7.x o superior)
-    . Composer
-    . Laravel Installer
-    . Un servidor de bases de datos compatible con Laravel (MySQL, PostgreSQL, SQLite, SQL Server)
-
-   # Instalación y configuración
-              Clonar el repositorio:
-
-              git clone https://github.com/claudiaglez/P09_GestorDeRecursos
-
-              Instalar dependencias:
-
-Accede al directorio del proyecto clonado e instala las dependencias de PHP con Composer:
+[![My Skills](https://skillicons.dev/icons?i=html,css,php,tailwind,laravel,mysql,)](https://skillicons.dev)
+<br>
 
 
-            
-               composer install
+## :computer: Get Started:
+
+* Clone this repository:
+```
+git clone https://github.com/claudiaglez/P09_GestorDeRecursos.git
+```
+
+* Navigate to the directory:
+```
+cd P09_GestorDeRecursos
+```
+
+* Install PHP dependencies
+```
+composer install
+```
+
+* Install Node.js dependencies
+```
+npm install
+```
+
+* Configure the environment file
+```
+cp .env.example .env
+```
+
+* Generates the Laravel application key
+```
+php artisan key:generate
+```
+
+* Configure database
+> [!CAUTION]
+> This is an example of the configuration of the database.
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=database_name
+DB_USERNAME=username
+DB_PASSWORD=password
+```
+  
+* Migrate the database
+```
+php artisan migrate
+```
+
+* Running the development server
+```
+php artisan serve
+```
+
+* Open your browser and visit
+```
+http://localhost:8000
+```
+
+* Enjoy! :sun_with_face:
+
+## :open_hands: Contributions
+
+Do you have any suggestion? Please, feel free to contact us or open an issue or pull request :star_struck:
 
 
-   #  Ejecutar migraciones:
-      Este paso creará las tablas necesarias en la base de datos:
-               *php artisan migrate*
+ ## 👩‍💻 Authors
 
- #   Ejecución
-Una vez completados los pasos de instalación y configuración, puedes iniciar el servidor de desarrollo de Laravel:
-                *php artisan serve*
-
+🧡 [Claudia González](https://www.linkedin.com/in/claudiaglezgarcia/)
+💛 [María Méndez](https://github.com/mariamf1985/)
+💙 [Ana Cecilia Reques](https://www.linkedin.com/in/ana-cecilia-reques/)
+💚 [Sharon Santamaría](https://github.com/sharonSofia)
 
 
-#   Créditos
-Este proyecto fue desarrollado por   Claudia,Anacecilia,MariaM,Sharon 
+
+
 
 
                                             
