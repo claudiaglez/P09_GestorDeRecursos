@@ -45,7 +45,7 @@ php artisan key:generate
 ```
 
 * Configure database
-> [!CAUTION]
+> [!WARNING]
 > This is an example of the configuration of the database.
 ```
 DB_CONNECTION=mysql
@@ -80,9 +80,9 @@ Do you have any suggestion? Please, feel free to contact us or open an issue or 
 
  ## 👩‍💻 Authors
 
-🧡 [Claudia González](https://www.linkedin.com/in/claudiaglezgarcia/)
-💛 [María Méndez](https://github.com/mariamf1985/)
-💙 [Ana Cecilia Reques](https://www.linkedin.com/in/ana-cecilia-reques/)
+🧡 [Claudia González](https://www.linkedin.com/in/claudiaglezgarcia/)<br>
+💛 [María Méndez](https://github.com/mariamf1985/)<br>
+💙 [Ana Cecilia Reques](https://www.linkedin.com/in/ana-cecilia-reques/)<br>
 💚 [Sharon Santamaría](https://github.com/sharonSofia)
 
 
